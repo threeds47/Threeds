@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>THREEDS</title>
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     * {
@@ -135,6 +136,65 @@
       color: #aaa;
     }
 
+    .contact-form {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .contact-form h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #00fff7;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    .contact-form form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px 15px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #ccc;
+    }
+
+    .contact-form textarea {
+      resize: none;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      background: #00fff7;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      color: #000;
+    }
+
+    .contact-form button:hover {
+      background: #00d9d1;
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 2.2em;
@@ -158,49 +218,40 @@
   </header>
 
   <section class="services">
-    <div class="service-card">
-      <i class="fas fa-video"></i>
-      <h3>Video Editing</h3>
-      <p>Smooth transitions, cinematic cuts, effects & custom reels.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-image"></i>
-      <h3>Photo Editing</h3>
-      <p>Retouching, enhancement, background change & more.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-paint-brush"></i>
-      <h3>Poster Design</h3>
-      <p>Stylish posters for social media, promotions or events.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-flag"></i>
-      <h3>Banner Creation</h3>
-      <p>Attractive digital banners for all kinds of campaigns.</p>
-    </div>
-    <div class="service-card">
-      <i class="fab fa-youtube"></i>
-      <h3>Thumbnail Design</h3>
-      <p>Eye-catching YouTube thumbnails for better views.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-magic"></i>
-      <h3>Custom Edits</h3>
-      <p>Any creative work you want – just tell us your idea!</p>
-    </div>
+    <div class="service-card"><i class="fas fa-video"></i><h3>Video Editing</h3><p>Smooth transitions, cinematic cuts, effects & custom reels.</p></div>
+    <div class="service-card"><i class="fas fa-image"></i><h3>Photo Editing</h3><p>Retouching, enhancement, background change & more.</p></div>
+    <div class="service-card"><i class="fas fa-paint-brush"></i><h3>Poster Design</h3><p>Stylish posters for social media, promotions or events.</p></div>
+    <div class="service-card"><i class="fas fa-flag"></i><h3>Banner Creation</h3><p>Attractive digital banners for all kinds of campaigns.</p></div>
+    <div class="service-card"><i class="fab fa-youtube"></i><h3>Thumbnail Design</h3><p>Eye-catching YouTube thumbnails for better views.</p></div>
+    <div class="service-card"><i class="fas fa-magic"></i><h3>Custom Edits</h3><p>Any creative work you want – just tell us your idea!</p></div>
   </section>
 
   <section class="connect">
     <h2>Connect with Me</h2>
     <div class="social-icons">
-      <a href="https://www.instagram.com/threeds47" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://youtube.com/@allthebest3.o?si=A88o8dDf_ExPJKJK" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.facebook.com/share/195GYf5isg/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/threeds47" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@allthebest3.o?si=A88o8dDf_ExPJKJK" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.facebook.com/share/195GYf5isg/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
     </div>
 
     <div class="whatsapp">
-      <i class="fab fa-whatsapp"></i> WhatsApp: <strong>7455827877</strong>
+      <a href="https://wa.me/917455827877" target="_blank" style="color: #25D366; text-decoration: none;">
+        <i class="fab fa-whatsapp"></i> WhatsApp: <strong>7455827877</strong>
+      </a>
     </div>
+  </section>
+
+  <section class="contact-form">
+    <h2>Send Me a Message</h2>
+    <form action="https://formspree.io/f/mayrzjqq" method="POST">
+      <input type="hidden" name="_subject" value="New message from THREEDS website!" />
+      <input type="hidden" name="_next" value="https://threeds47.github.io/Threeds/thankyou.html" />
+
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
@@ -208,12 +259,3 @@
   </footer>
 </body>
 </html>
-<section class="contact-form">
-  <h2>Send Me a Message</h2>
-  <form action="https://formspree.io/f/mayrzjqq" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
