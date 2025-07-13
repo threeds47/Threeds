@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>THREEDS</title>
-  <!-- Font Awesome for icons -->
+  <title>THREEDS - Editing Services</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     * {
@@ -99,6 +98,17 @@
       color: #ccc;
     }
 
+    .order-btn {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     .connect {
       text-align: center;
       padding: 30px 20px;
@@ -127,13 +137,6 @@
 
     .whatsapp i {
       margin-right: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #aaa;
     }
 
     .contact-form {
@@ -195,6 +198,13 @@
       background: #00d9d1;
     }
 
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 2.2em;
@@ -218,22 +228,98 @@
   </header>
 
   <section class="services">
-    <div class="service-card"><i class="fas fa-video"></i><h3>Video Editing</h3><p>Smooth transitions, cinematic cuts, effects & custom reels.</p></div>
-    <div class="service-card"><i class="fas fa-image"></i><h3>Photo Editing</h3><p>Retouching, enhancement, background change & more.</p></div>
-    <div class="service-card"><i class="fas fa-paint-brush"></i><h3>Poster Design</h3><p>Stylish posters for social media, promotions or events.</p></div>
-    <div class="service-card"><i class="fas fa-flag"></i><h3>Banner Creation</h3><p>Attractive digital banners for all kinds of campaigns.</p></div>
-    <div class="service-card"><i class="fab fa-youtube"></i><h3>Thumbnail Design</h3><p>Eye-catching YouTube thumbnails for better views.</p></div>
-    <div class="service-card"><i class="fas fa-magic"></i><h3>Custom Edits</h3><p>Any creative work you want – just tell us your idea!</p></div>
+    <div class="service-card">
+      <i class="fas fa-image"></i>
+      <h3>📸 Photo Editing – ₹99</h3>
+      <p>Retouching, enhancement, background change & more.</p>
+      <a href="https://wa.me/917455827877" class="order-btn">Order Now</a>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-video"></i>
+      <h3>🎬 Video Editing – ₹249</h3>
+      <p>Smooth transitions, cinematic cuts, effects & reels.</p>
+      <a href="https://wa.me/917455827877" class="order-btn">Order Now</a>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-paint-brush"></i>
+      <h3>📄 Poster Design – ₹149</h3>
+      <p>Stylish posters for social media, promotions or events.</p>
+      <a href="https://wa.me/917455827877" class="order-btn">Order Now</a>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-flag"></i>
+      <h3>🖼️ Banner Creation – ₹149</h3>
+      <p>Attractive banners for any digital or print use.</p>
+      <a href="https://wa.me/917455827877" class="order-btn">Order Now</a>
+    </div>
+    <div class="service-card">
+      <i class="fab fa-youtube"></i>
+      <h3>🎯 Thumbnail Design – ₹99</h3>
+      <p>Eye-catching YouTube thumbnails for more views.</p>
+      <a href="https://wa.me/917455827877" class="order-btn">Order Now</a>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-magic"></i>
+      <h3>🎨 Custom Edits – ₹199</h3>
+      <p>Creative projects tailored to your ideas or brand.</p>
+      <a href="https://wa.me/917455827877" class="order-btn">Order Now</a>
+    </div>
   </section>
+<section class="custom-template-section">
+  <div class="custom-card">
+    <h2>🎁 Custom Templates & Designs</h2>
+    <p>We create <strong>exclusive and personalized</strong> designs for each client to match your unique style and brand.</p>
+    <p class="highlight">📞 Contact us now to preview demo designs made just for you!</p>
+  </div>
+</section>
+ <style>
+  .custom-template-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
 
+  .custom-card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    border: 2px solid #00fff7;
+    animation: glowBox 3s ease-in-out infinite;
+  } 
+ .custom-card h2 {
+    color: #00fff7;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #00fff7;
+  }
+
+  .custom-card p {
+    color: #eee;
+    font-size: 1.05em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .custom-card .highlight {
+    color: #25D366;
+    font-weight: bold;
+    margin-top: 10px;
+  } 
+  @keyframes glowBox {
+    0% { box-shadow: 0 0 10px #00fff7; }
+    50% { box-shadow: 0 0 30px #00fff7; }
+    100% { box-shadow: 0 0 10px #00fff7; }
+  }
   <section class="connect">
     <h2>Connect with Me</h2>
     <div class="social-icons">
-      <a href="https://www.instagram.com/threeds47" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://youtube.com/@allthebest3.o?si=A88o8dDf_ExPJKJK" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.facebook.com/share/195GYf5isg/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/threeds47" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@allthebest3.o?si=A88o8dDf_ExPJKJK" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.facebook.com/share/195GYf5isg/" target="_blank"><i class="fab fa-facebook"></i></a>
     </div>
-
     <div class="whatsapp">
       <a href="https://wa.me/917455827877" target="_blank" style="color: #25D366; text-decoration: none;">
         <i class="fab fa-whatsapp"></i> WhatsApp: <strong>7455827877</strong>
@@ -246,7 +332,6 @@
     <form action="https://formspree.io/f/mayrzjqq" method="POST">
       <input type="hidden" name="_subject" value="New message from THREEDS website!" />
       <input type="hidden" name="_next" value="https://threeds47.github.io/Threeds/thankyou.html" />
-
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -259,3 +344,407 @@
   </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Info - THREEDS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #00fff7;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ff4da6;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    section {
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.05);
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.2);
+    }
+
+    section h2 {
+      color: #00fff7;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      color: #eee;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.8em;
+      color: #ff4da6;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00ffff;
+    }
+
+    .whatsapp {
+      margin-top: 15px;
+      font-size: 1.1em;
+      color: #25D366;
+    }
+
+    .whatsapp a {
+      color: #25D366;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>THREEDS</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+      <a href="#disclaimer">Disclaimer</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>THREEDS is a creative service brand offering high-quality photo editing, video editing, thumbnails, posters, and custom designs for individuals and creators.</p>
+    <p>Our mission is to make your digital presence look premium and professional with minimal cost.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>We respect your privacy. Any personal information shared with us is used only for fulfilling service requests and communicating with clients. We do not sell or share data with any third party.</p>
+    <p>We may use Google AdSense or analytics tools that use cookies. You can control cookie settings in your browser.</p>
+  </section>
+
+  <section id="terms">
+    <h2>Terms & Conditions</h2>
+    <p>By using our services, you agree not to misuse or illegally distribute the edited materials. Payments once made are non-refundable. If any issues occur, please contact us within 3 days.</p>
+    <p>We reserve the right to reject any project that promotes hate, abuse, or illegal activities.</p>
+  </section>
+
+  <section id="disclaimer">
+    <h2>Disclaimer</h2>
+    <p>The content provided on this site is for information and creative services only. While we try to maintain quality, we do not guarantee any specific outcome from the designs.</p>
+    <p>All logos, media, and graphics used are either original, licensed, or free-to-use resources.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach out to us for orders or queries through WhatsApp or social media:</p>
+    <div class="whatsapp">
+      <a href="https://wa.me/917455827877" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: 7455827877</a>
+    </div>
+    <div class="social-icons" style="margin-top: 15px;">
+      <a href="https://www.instagram.com/threeds47" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@allthebest3.o" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.facebook.com/share/195GYf5isg/" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    
+  </footer>
+
+</body>
+<footer>
+  <p class="thank-you">🎉 Thank you for visiting! 🎉</p>
+</footer>
+
+<style>
+  .thank-you {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #00fff7;
+    animation: glow 2s infinite ease-in-out;
+    text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7;
+  }
+
+  @keyframes glow {
+    0% { text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7; }
+    50% { text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; color: #ffffff; }
+    100% { text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7; }
+  }
+</style>
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>THREEDS - Editing Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #00ffcc;
+  margin: 20px auto;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 0 15px #000;
+}
+
+header h1 {
+  font-size: 3.5em;
+  color: #00fff7;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.tagline {
+  font-size: 1.3em;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.service-card i {
+  font-size: 2.5em;
+  color: #00fff7;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.service-card p {
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+.order-btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.custom-template-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.custom-card
+
+<!-- EARTH SAVE by THREEDS Section Start -->
+<section style="
+  background-image: url('https://i.ibb.co/P4S4fTz/earth-forest-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+">
+  <!-- Background animation glow -->
+  <div style="
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(124,252,0,0.3), transparent 70%);
+    animation: glowmove 10s linear infinite alternate;
+    z-index: 0;
+  "></div>
+
+  <style>
+    @keyframes glowmove {
+      0% { top: -100px; left: -100px; }
+      100% { top: 100%; left: 100%; }
+    }
+
+    #popupBtn {
+      background-color: #7CFC00;
+      color: #000;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 25px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 rgba(255,255,255,0.7); }
+      50% { transform: scale(1.05); box-shadow: 0 0 20px rgba(124,252,0,0.7); }
+      100% { transform: scale(1); box-shadow: 0 0 0 rgba(255,255,255,0.7); }
+    }
+  </style>
+
+  <div style="
+    background-color: rgba(0, 50, 0, 0.75);
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+  ">
+
+    <!-- 🎧 Listen Button -->
+    <button id="popupBtn" onclick="document.getElementById('earthAudio').play()">🎧 Listen Now</button>
+
+    <!-- 🎙️ Audio Section with Direct Link -->
+    <audio id="earthAudio" controls style="margin-bottom: 30px; width: 100%; max-width: 700px;" preload="auto">
+      <source src="https://files.catbox.moe/shd18j.mp3" type="audio/mp3">
+      आपका ब्राउज़र ऑडियो प्लेयर को सपोर्ट नहीं करता।
+    </audio>
+
+    <h2 style="font-size: 42px; margin-bottom: 15px;">🌍 EARTH SAVE by <span style="color:#7CFC00;">THREEDS</span></h2>
+    <h3 style="font-size: 24px; font-style: italic; margin-bottom: 30px;">Campaign Concept: <span style="color:#90EE90;">Apni Dharti, Apna Farz</span></h3>
+
+    <blockquote style="font-size: 20px; font-style: italic; color: #c0ffc0; margin: 20px auto; max-width: 700px;">
+      "Jab sab dusra planet dhoondh rahe, <strong>THREEDS</strong> apni dharti ko bachane me laga hai."
+    </blockquote>
+
+    <h3 style="font-size: 22px; margin-top: 40px;">🚀 Mission Statement</h3>
+    <p style="font-size: 17px; line-height: 1.8; max-width: 800px; margin: 10px auto;">
+      Hamari duniya ek hi hai. Humne ise pollute kiya, aur humein hi ise sudharna hoga.<br>
+      TRILLIONS space pe kharch karne se pehle, zara dharti ko phir se jeevit banayein.<br>
+      <strong>"EARTH SAVE by THREEDS"</strong> ek awaaz hai, ek kadam hai, aur ek jazba hai is dharti ke liye.
+    </p>
+
+    <h3 style="font-size: 22px; margin-top: 40px;">♻️ Core Beliefs</h3>
+    <ul style="list-style: none; padding-left: 0; font-size: 17px; text-align: left; max-width: 800px; margin: auto; line-height: 1.8;">
+      <li>✅ Dharti hamara ghar hai. Planet B koi solution nahi hai.</li>
+      <li>✅ Pollution pe paisa kam, solution pe zyada lagayein.</li>
+      <li>✅ Aane wali peedhiyon ke liye surakshit vatavaran banana hamari zimmedari hai.</li>
+      <li>✅ Technology ka use tabhi sahi hai jab wo dharti ke saath insaaf kare.</li>
+    </ul>
+
+    <h3 style="font-size: 22px; margin-top: 40px;">📝 Poster Taglines</h3>
+    <ul style="font-size: 17px; text-align: left; max-width: 800px; margin: auto; line-height: 1.8;">
+      <li>🌱 "Mitti se bhagein nahi, usse mehkaayein."</li>
+      <li>🌱 "Khaali planets dhoondhne se pehle, khud ko dhoondho."</li>
+      <li>🌱 "Save Earth. Save Us. Save Future."</li>
+      <li>🌱 "Paise rocket me nahi, ped me lagao."</li>
+      <li>🌱 "Y
