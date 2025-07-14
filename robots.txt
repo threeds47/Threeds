@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://threeds47.github.io/Threeds/sitemap.xml
