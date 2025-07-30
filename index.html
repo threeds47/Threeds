@@ -269,6 +269,148 @@
       <a href="https://wa.me/917455827877" class="order-btn">Order Now</a>
     </div>
   </section>
+  <section id="videos" style="padding:50px 20px; background:#111; color:#fff; text-align:center;">
+  <h2 style="font-size:2.5rem; margin-bottom:30px; text-transform:uppercase; letter-spacing:2px;">Our Edited Videos</h2>
+
+  <div style="display:flex; gap:15px; overflow-x:auto; padding-bottom:10px; max-width:1200px; margin:auto; scroll-behavior:smooth;">
+
+    <!-- YouTube Video 1 -->
+    <div class="yt-container" style="flex:0 0 auto; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 0 15px rgba(255,255,255,0.2);">
+      <div style="position:relative; width:100%; padding-top:177.78%;">
+        <iframe 
+          src="https://www.youtube.com/embed/q2WB4msnxTA?enablejsapi=1&rel=0&modestbranding=1&vq=hd1080&playsinline=1" 
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+          allowfullscreen
+          class="yt-video"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:15px;">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- YouTube Video 2 -->
+    <div class="yt-container" style="flex:0 0 auto; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 0 15px rgba(255,255,255,0.2);">
+      <div style="position:relative; width:100%; padding-top:177.78%;">
+        <iframe 
+          src="https://www.youtube.com/embed/joqNrMcHyrc?enablejsapi=1&rel=0&modestbranding=1&vq=hd1080&playsinline=1" 
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+          allowfullscreen
+          class="yt-video"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:15px;">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- YouTube Video 3 -->
+    <div class="yt-container" style="flex:0 0 auto; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 0 15px rgba(255,255,255,0.2);">
+      <div style="position:relative; width:100%; padding-top:177.78%;">
+        <iframe 
+          src="https://www.youtube.com/embed/--x-pZ6UROs?enablejsapi=1&rel=0&modestbranding=1&vq=hd1080&playsinline=1" 
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+          allowfullscreen
+          class="yt-video"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:15px;">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Instagram Reel 1 -->
+    <div class="insta-reel" style="flex:0 0 auto; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 0 15px rgba(255,255,255,0.2); background:#000;">
+      <div style="position:relative; width:100%; padding-top:177.78%;">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DKM5Fr4SnEQ/"
+          data-instgrm-version="14"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; margin:0; padding:0; border:0;">
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- Instagram Reel 2 -->
+    <div class="insta-reel" style="flex:0 0 auto; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 0 15px rgba(255,255,255,0.2); background:#000;">
+      <div style="position:relative; width:100%; padding-top:177.78%;">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DKGstUqSAWQ/"
+          data-instgrm-version="14"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; margin:0; padding:0; border:0;">
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- Instagram Reel 3 -->
+    <div class="insta-reel" style="flex:0 0 auto; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 0 15px rgba(255,255,255,0.2); background:#000;">
+      <div style="position:relative; width:100%; padding-top:177.78%;">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DMP-XYZzB_y/"
+          data-instgrm-version="14"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; margin:0; padding:0; border:0;">
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- Instagram Reel 4 -->
+    <div class="insta-reel" style="flex:0 0 auto; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 0 15px rgba(255,255,255,0.2); background:#000;">
+      <div style="position:relative; width:100%; padding-top:177.78%;">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DMohIbdTLlM/"
+          data-instgrm-version="14"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; margin:0; padding:0; border:0;">
+        </blockquote>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Scripts -->
+<script async src="https://www.instagram.com/embed.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  let players = [];
+
+  // ✅ YouTube auto-pause
+  function onYouTubeIframeAPIReady() {
+    document.querySelectorAll('.yt-video').forEach((iframe, index) => {
+      players[index] = new YT.Player(iframe, {
+        events: {
+          'onStateChange': (event) => {
+            if (event.data === YT.PlayerState.PLAYING) {
+              stopAllMedia("youtube", index);
+            }
+          }
+        }
+      });
+    });
+  }
+
+  // ✅ Stop function for both YouTube & Insta
+  function stopAllMedia(type, activeIndex) {
+    // Pause all YouTube videos except current
+    players.forEach((p, i) => {
+      if (type === "youtube" && i !== activeIndex) p.pauseVideo();
+    });
+
+    // Reload Instagram embeds (stop reels except current)
+    document.querySelectorAll('.insta-reel').forEach((reel, i) => {
+      if (type === "youtube" || (type === "insta" && i !== activeIndex)) {
+        let block = reel.querySelector("blockquote");
+        let link = block.getAttribute("data-instgrm-permalink");
+        block.innerHTML = "";
+        block.setAttribute("data-instgrm-permalink", link);
+      }
+    });
+    instgrm.Embeds.process(); // Refresh embeds
+  }
+
+  // ✅ Insta reel click detection
+  document.addEventListener("click", e => {
+    if (e.target.closest(".insta-reel")) {
+      let index = [...document.querySelectorAll(".insta-reel")].indexOf(e.target.closest(".insta-reel"));
+      stopAllMedia("insta", index);
+    }
+  });
+</script>
 <section class="custom-template-section">
   <div class="custom-card">
     <h2>🎁 Custom Templates & Designs</h2>
